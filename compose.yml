@@ -7,7 +7,7 @@ services:
       LLAMA_ARG_NO_WEBUI: 1
       LLAMA_ARG_JINJA: 1
       LLAMA_ARG_HF_REPO: ${LLAMA_ARG_HF_REPO}
-      LLAMA_CHAT_TEMPLATE_KWARGS: '{"reasoning_effort":"low","builtin_tools":["python","browser"]}'
+      LLAMA_CHAT_TEMPLATE_KWARGS: '{\"reasoning_effort\":\"low\",\"builtin_tools\":[\"python\",\"browser\"]}'
       PYTHON_EXECUTION_BACKEND: UV
       EXA_API_KEY: ${EXA_API_KEY}
       LLAMA_API_KEY: ${LLAMA_API_KEY}
