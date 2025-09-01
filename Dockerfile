@@ -13,4 +13,6 @@ WORKDIR /app
 
 EXPOSE 8000/tcp
 
+HEALTHCHECK CMD [ "curl", "-f", "http://localhost:8000/health" ]
+
 ENTRYPOINT [ "./llama-server" ]
